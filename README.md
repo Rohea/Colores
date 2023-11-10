@@ -1,15 +1,13 @@
 # ReScript-Color
 
-A color manipulation library written in ReScript.
+A color manipulation library written in ReScript. Provides manipulation functions and internal types for different types of color values.
+
+There are also bindings to `bs-css` to make usage of this library easy with color types from it.
 
 Prior work and inspirations
 
 - [@rohea/re-polished]()
 - [Polished](https://polished.js.org/)
-
-- Provide data types for color manipulation
-- Implement many of the color manipulation functions from Polished in platform agnostic ReasonML.
-- Offer a binding layer for [bs-css](https://github.com/reasonml-labs/bs-css) and others (?) for easier use on web platform in [ReScript](https://rescript-lang.org/)
 
 ## Installation with bs-css
 
