@@ -4,11 +4,6 @@ A color manipulation library written in ReScript. Provides manipulation function
 
 There are also bindings to `bs-css` to make usage of this library easy with color types from it.
 
-Prior work and inspirations
-
-- [@rohea/re-polished]()
-- [Polished](https://polished.js.org/)
-
 ## Installation with bs-css
 
 ```
@@ -59,3 +54,8 @@ New functions are added as soon as we need them or someone makes a nice pull req
 
 1. Move to folder `cd packages/color-bs-css`
 2. Run examples `pnpm examples`
+
+## Prior work and inspirations
+
+- [@rohea/re-polished]()
+- [Polished](https://polished.js.org/)
