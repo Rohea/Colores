@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "build": "rescript build -with-deps",
+    "watch": "rescript build -w",
+    "format": "rescript format -all",
+    "clean": "rescript clean",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "examples": "cd ./packages/color-bs-css; pnpm examples"
+  },
+  "engines": {
+    "node": ">=16.14",
+    "pnpm": ">=8.9"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/color",
+    "packages/color-bs-css"
+  ],
+  "dependencies": {
+    "@rohea/rescript-color": "file:./packages/color",
+    "@rohea/rescript-color-bs-css": "file:./packages/color-bs-css"
+  },
+  "devDependencies": {
+    "vite": "4.4.11",
+    "vite-plugin-static-copy": "0.13.1",
+    "@vitejs/plugin-react": "4.1.0",
+    "@jihchi/vite-plugin-rescript": "5.3.1",
+    "vite-plugin-html": "3.2.0",
+    "rescript": "11.0.0-rc.4",
+    "@glennsl/rescript-jest": "0.10.0",
+    "jest": "^27.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@rescript/react": "0.11.0",
+    "bs-css-emotion": "6.0.2"
+  }
+}

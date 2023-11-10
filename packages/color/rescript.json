@@ -1,0 +1,29 @@
+{
+  "name": "@rohea/rescript-color",
+  "jsx": {
+    "version": 4,
+    "mode": "automatic"
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "bs-dependencies": [],
+  "bs-dev-dependencies": [
+    "@glennsl/rescript-jest"
+  ],
+  "suffix": ".bs.js"
+}

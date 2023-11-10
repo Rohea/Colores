@@ -1,0 +1,19 @@
+{
+  "name": "@rohea/rescript-color",
+  "version": "0.1.0",
+  "description": "ReScript color manipulation library",
+  "license": "MIT",
+  "keywords": [
+    "rescript",
+    "bucklescript",
+    "color"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rohea/rescript-color.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {}
+}

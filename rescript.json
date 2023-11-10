@@ -1,0 +1,29 @@
+{
+  "name": "monorepo-root",
+  "jsx": {
+    "version": 4,
+    "mode": "automatic"
+  },
+  "sources": [],
+  "pinned-dependencies": [
+    "@rohea/rescript-color",
+    "@rohea/rescript-color-bs-css"
+  ],
+  "bs-dependencies": [
+    "@rescript/react",
+    "bs-css-emotion",
+    "bs-css",
+    "@rohea/rescript-color",
+    "@rohea/rescript-color-bs-css"
+  ],
+  "bs-dev-dependencies": [
+    "@glennsl/rescript-jest"
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js"
+}

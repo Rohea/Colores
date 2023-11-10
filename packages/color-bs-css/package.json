@@ -1,0 +1,28 @@
+{
+  "name": "@rohea/rescript-color-bs-css",
+  "version": "0.1.0",
+  "description": "Bindings for bs-css",
+  "license": "MIT",
+  "keywords": [
+    "rescript",
+    "bucklescript",
+    "bs-css",
+    "css",
+    "color"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rohea/rescript-color.git"
+  },
+  "scripts": {
+    "examples": "NODE_ENV=development vite"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@rohea/rescript-color": "0.1.0",
+    "bs-css": "~17.0.2"
+  }
+}
