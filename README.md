@@ -16,7 +16,7 @@ Then add `@rohea/rescript-color` and `@rohea/rescript-color-bs-css` to `bs-depen
 
 ```
 let myClass = CssJs.style([
-    CssJs.backgroundColor(`hex("ff0000")->ColorCssJs.darken(0.5))
+    CssJs.backgroundColor(#hex("ff0000")->ColorCssJs.darken(0.5))
 ])
 ```
 
