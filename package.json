@@ -1,4 +1,5 @@
 {
+  "name": "@rohea/rescript-color-monorepo",
   "scripts": {
     "build": "rescript build -with-deps",
     "watch": "rescript build -w",
