@@ -5,7 +5,7 @@
     "watch": "rescript build -w",
     "format": "rescript format -all",
     "clean": "rescript clean",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "jest lib/",
     "examples": "cd ./packages/color-bs-css; pnpm examples"
   },
   "engines": {
@@ -27,7 +27,7 @@
     "@vitejs/plugin-react": "4.1.0",
     "@jihchi/vite-plugin-rescript": "5.3.1",
     "vite-plugin-html": "3.2.0",
-    "rescript": "11.0.0-rc.4",
+    "rescript": "11.0.0-rc.5",
     "@glennsl/rescript-jest": "0.10.0",
     "jest": "^27.3.1",
     "react": "18.2.0",

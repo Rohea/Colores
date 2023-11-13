@@ -23,6 +23,10 @@
     {
       "module": "es6",
       "in-source": true
+    },
+    {
+      "module": "commonjs",
+      "in-source": false
     }
   ],
   "suffix": ".bs.js"

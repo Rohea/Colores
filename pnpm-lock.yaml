@@ -20,7 +20,7 @@ importers:
         version: 0.10.0
       '@jihchi/vite-plugin-rescript':
         specifier: 5.3.1
-        version: 5.3.1(rescript@11.0.0-rc.4)(vite@4.4.11)
+        version: 5.3.1(rescript@11.0.0-rc.5)(vite@4.4.11)
       '@rescript/react':
         specifier: 0.11.0
         version: 0.11.0(react-dom@18.2.0)(react@18.2.0)
@@ -40,8 +40,8 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       rescript:
-        specifier: 11.0.0-rc.4
-        version: 11.0.0-rc.4
+        specifier: 11.0.0-rc.5
+        version: 11.0.0-rc.5
       vite:
         specifier: 4.4.11
         version: 4.4.11
@@ -907,7 +907,7 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@jihchi/vite-plugin-rescript@5.3.1(rescript@11.0.0-rc.4)(vite@4.4.11):
+  /@jihchi/vite-plugin-rescript@5.3.1(rescript@11.0.0-rc.5)(vite@4.4.11):
     resolution: {integrity: sha512-euwG11+dW6vhJfHbYT5RNAdHdk2k0geYqFLsga1kxTJstTOqJ0j6ubTE6bNXO1dQtA5nEY+hjRZ7fWVygBL7PA==}
     engines: {node: ^16 || ^18 || ^20}
     peerDependencies:
@@ -917,7 +917,7 @@ packages:
       chalk: 4.1.2
       execa: 5.1.1
       npm-run-path: 4.0.1
-      rescript: 11.0.0-rc.4
+      rescript: 11.0.0-rc.5
       vite: 4.4.11
     dev: true
 
@@ -3101,8 +3101,8 @@ packages:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
     dev: true
 
-  /rescript@11.0.0-rc.4:
-    resolution: {integrity: sha512-yh82o30J2/B/IwyPZjM+mc82FdyPkXRjXxlsUVEoyc5Z/snlq3Za2PhJhlfacwk+ui5lcOZsH8SndWPiI21vXg==}
+  /rescript@11.0.0-rc.5:
+    resolution: {integrity: sha512-7tiOmhOJ0myaIM9/AEYxiKXha2mn+9AGdkiy5PNOaBjuGxF2Le7qnr/cyOiTTpPq4fYXxZhwpaBF1AKNl5LUPg==}
     engines: {node: '>=10'}
     hasBin: true
     requiresBuild: true

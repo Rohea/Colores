@@ -20,12 +20,6 @@
       "type": "dev"
     }
   ],
-  "package-specs": [
-    {
-      "module": "es6",
-      "in-source": true
-    }
-  ],
   "bs-dependencies": [
     "@rohea/rescript-color",
     "bs-css-emotion",
@@ -34,6 +28,16 @@
   "bs-dev-dependencies": [
     "@rescript/react",
     "@glennsl/rescript-jest"
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    },
+    {
+      "module": "commonjs",
+      "in-source": false
+    }
   ],
   "suffix": ".bs.js"
 }
