@@ -2,15 +2,15 @@
   "name": "@rohea/rescript-color-monorepo",
   "scripts": {
     "build": "rescript build -with-deps",
-    "watch": "rescript build -w",
+    "clean": "rewatch clean .",
     "format": "rescript format -all",
-    "clean": "rescript clean",
+    "watch": "rewatch watch .",
     "test": "jest lib/",
     "examples": "cd ./packages/color-bs-css; pnpm examples"
   },
   "engines": {
     "node": ">=16.14",
-    "pnpm": ">=8.9"
+    "yarn": ">=1.22.0 <2.0"
   },
   "private": true,
   "workspaces": [
@@ -33,6 +33,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "@rescript/react": "0.11.0",
-    "bs-css-emotion": "6.0.2"
+    "bs-css-emotion": "6.0.2",
+    "@rolandpeelen/rewatch": "^0.0.12-446452d.0"
   }
 }
