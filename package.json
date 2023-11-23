@@ -1,12 +1,14 @@
 {
   "name": "@rohea/rescript-color-monorepo",
   "scripts": {
-    "build": "rescript build -with-deps",
+    "res-build": "rescript build -with-deps",
+    "res-clean": "rescript clean",
     "clean": "rewatch clean .",
+    "force-remove": "find . -name \"*.bs.js\" -type f -delete",
     "format": "rescript format -all",
     "watch": "rewatch watch .",
-    "test": "jest lib/",
-    "examples": "cd ./packages/color-bs-css; pnpm examples"
+    "test": "yarn res-build; jest",
+    "examples": "parcel serve examples/index.html"
   },
   "engines": {
     "node": ">=16.14",
@@ -15,25 +17,24 @@
   "private": true,
   "workspaces": [
     "packages/color",
-    "packages/color-bs-css"
+    "packages/color-bs-css",
+    "examples"
   ],
-  "dependencies": {
-    "@rohea/rescript-color": "file:./packages/color",
-    "@rohea/rescript-color-bs-css": "file:./packages/color-bs-css"
-  },
   "devDependencies": {
-    "vite": "4.4.11",
-    "vite-plugin-static-copy": "0.13.1",
-    "@vitejs/plugin-react": "4.1.0",
-    "@jihchi/vite-plugin-rescript": "5.3.1",
-    "vite-plugin-html": "3.2.0",
-    "rescript": "11.0.0-rc.5",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
     "@glennsl/rescript-jest": "0.10.0",
+    "@jihchi/vite-plugin-rescript": "5.3.1",
+    "@rescript/react": "0.11.0",
+    "@rolandpeelen/rewatch": "^0.0.12-ff0a51e.0",
+    "@vitejs/plugin-react": "4.1.0",
+    "babel-jest": "^29.7.0",
+    "bs-css-emotion": "6.0.2",
     "jest": "^27.3.1",
+    "parcel": "^2.9.2",
+    "process": "^0.11.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@rescript/react": "0.11.0",
-    "bs-css-emotion": "6.0.2",
-    "@rolandpeelen/rewatch": "^0.0.12-446452d.0"
+    "rescript": "11.0.0-rc.6"
   }
 }

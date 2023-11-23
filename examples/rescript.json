@@ -1,25 +1,18 @@
 {
-  "name": "@rohea/rescript-color-bs-css",
-  "namespace": "ColorCssJs",
+  "name": "@rohea/rescript-color-examples",
+  "namespace": "Examples",
   "sources": [
     {
       "dir": "src",
       "subdirs": true
-    },
-    {
-      "dir": "__tests__",
-      "subdirs": true,
-      "type": "dev"
     }
   ],
   "bs-dependencies": [
     "@rohea/rescript-color",
+    "@rohea/rescript-color-bs-css",
+    "@rescript/react",
     "bs-css-emotion",
     "bs-css"
-  ],
-  "bs-dev-dependencies": [
-    "@rescript/react",
-    "@glennsl/rescript-jest"
   ],
   "package-specs": [
     {

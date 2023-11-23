@@ -14,15 +14,14 @@
     "type": "git",
     "url": "https://github.com/Rohea/rescript-color.git"
   },
-  "scripts": {
-    "examples": "NODE_ENV=development vite"
-  },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {},
   "peerDependencies": {
+    "rescript": "11.0.0-rc.6",
     "@rohea/rescript-color": "0.1.0",
+    "bs-css-emotion": "6.0.2",
     "bs-css": "~17.0.2"
   }
 }

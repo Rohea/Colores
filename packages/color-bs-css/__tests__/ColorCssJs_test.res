@@ -1,7 +1,7 @@
 open Jest
 open Expect
 
-open Color_Types
+open Color.Types
 
 open ColorCssJs
 

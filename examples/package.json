@@ -1,11 +1,13 @@
 {
-  "name": "@rohea/rescript-color",
+  "name": "@rohea/rescript-color-examples",
   "version": "0.1.0",
-  "description": "ReScript color manipulation library",
+  "description": "Examples",
   "license": "MIT",
   "keywords": [
     "rescript",
     "bucklescript",
+    "bs-css",
+    "css",
     "color"
   ],
   "repository": {
@@ -17,7 +19,10 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "rescript": "11.0.0-rc.6"
+    "rescript": "11.0.0-rc.6",
+    "@rohea/rescript-color": "0.1.0",
+    "@rohea/rescript-color-bs-css": "0.1.0",
+    "bs-css-emotion": "6.0.2",
+    "bs-css": "~17.0.2"
   }
-
 }

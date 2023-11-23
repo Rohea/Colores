@@ -4,3 +4,5 @@ lib
 ./**/node_modules/**/*
 
 *.bs.js
+.parcel-cache
+dist
