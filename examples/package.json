@@ -1,5 +1,5 @@
 {
-  "name": "@rohea/rescript-color-examples",
+  "name": "@rohea/colores-examples",
   "version": "0.1.0",
   "description": "Examples",
   "license": "MIT",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rohea/rescript-color.git"
+    "url": "https://github.com/Rohea/Colores.git"
   },
   "publishConfig": {
     "access": "public"

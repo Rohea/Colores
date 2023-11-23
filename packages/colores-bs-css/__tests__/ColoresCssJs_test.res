@@ -1,9 +1,9 @@
 open Jest
 open Expect
 
-open Color.Types
+open Colores.Types
 
-open ColorCssJs
+open ColoresCssJs
 
 describe("PolishedCss_Color.Utils.cssAngleToDegree", () => {
   test("100 grad to 90 deg", () =>

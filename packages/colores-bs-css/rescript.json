@@ -1,6 +1,5 @@
 {
-  "name": "@rohea/rescript-color-bs-css",
-  "namespace": "ColorCssJs",
+  "name": "@rohea/colores-bs-css",
   "sources": [
     {
       "dir": "src",
@@ -13,7 +12,7 @@
     }
   ],
   "bs-dependencies": [
-    "@rohea/rescript-color",
+    "@rohea/colores",
     "bs-css-emotion",
     "bs-css"
   ],

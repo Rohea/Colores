@@ -1,5 +1,5 @@
-module T = Color.Types
-module Fn = Color.Functions
+module T = Colores.Types
+module Fn = Colores.Functions
 
 module Utils = {
   /**

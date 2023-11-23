@@ -1,14 +1,14 @@
 const rootConfig = require("./rescript.json");
-const colorConfig = require("./packages/color/rescript.json");
-const colorBsCssConfig = require("./packages/color-bs-css/rescript.json");
+const coloresConfig = require("./packages/colores/rescript.json");
+const coloresBsCssConfig = require("./packages/colores-bs-css/rescript.json");
 
 const rescriptDependencies = [
   ...rootConfig["bs-dependencies"],
   ...rootConfig["bs-dev-dependencies"],
-  ...colorConfig["bs-dependencies"],
-  ...colorConfig["bs-dev-dependencies"],
-  ...colorBsCssConfig["bs-dependencies"],
-  ...colorBsCssConfig["bs-dev-dependencies"],
+  ...coloresConfig["bs-dependencies"],
+  ...coloresConfig["bs-dev-dependencies"],
+  ...coloresBsCssConfig["bs-dependencies"],
+  ...coloresBsCssConfig["bs-dev-dependencies"],
   "rescript",
 ];
 
@@ -20,8 +20,6 @@ module.exports = {
   },
   // ReScript dependencies must be transformed
   transformIgnorePatterns: [`node_modules/(?!${rescriptDependencies.join("|")}).+\\.js$`],
-  // transformIgnorePatterns: ["<rootDir>/node_modules/(?!(rescript|@glennsl/rescript-jest)/)"],
   testMatch: ["**/__tests__/**/*_test.bs.js"],
-  // transformIgnorePatterns: ["node_modules/(?!(rescript)/)"],
   verbose: true,
 };

@@ -1,5 +1,5 @@
 {
-  "name": "@rohea/rescript-color-examples",
+  "name": "@rohea/colores-examples",
   "namespace": "Examples",
   "sources": [
     {
@@ -8,8 +8,8 @@
     }
   ],
   "bs-dependencies": [
-    "@rohea/rescript-color",
-    "@rohea/rescript-color-bs-css",
+    "@rohea/colores",
+    "@rohea/colores-bs-css",
     "@rescript/react",
     "bs-css-emotion",
     "bs-css"

@@ -1,7 +1,7 @@
 {
-  "name": "@rohea/rescript-color",
+  "name": "@rohea/colores",
   "version": "0.1.0",
-  "description": "ReScript color manipulation library",
+  "description": "A color manipulation library for ReScript",
   "license": "MIT",
   "keywords": [
     "rescript",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rohea/rescript-color.git"
+    "url": "https://github.com/Rohea/Colores.git"
   },
   "publishConfig": {
     "access": "public"
