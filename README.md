@@ -23,10 +23,10 @@ let myClass = CssJs.style([
 ## Installation (without bs-css)
 
 ```
-yarn add @rohea/rescript-recolor
+yarn add @rohea/rescript-color
 ```
 
-Then add `@rohea/re-polished` to `bs-dependencies` in your `bsconfig.json`.
+Then add `@rohea/rescript-color` to `bs-dependencies` in your `rescript.json`.
 
 ## Supported functions
 
@@ -47,13 +47,10 @@ New functions are added as soon as we need them or someone makes a nice pull req
 ## Development
 
 1. Checkout the repository
-2. Run `pnpm i`
-3. Run `pnpm dev`
-
-## Run examples
-
-1. Move to folder `cd packages/color-bs-css`
-2. Run examples `pnpm examples`
+2. Run `yarn install` (using Yarn version 1.22.x)
+3. Run `yarn res-build` to make a full ReScript build
+4. Run `yarn examples` to start example page with Parcel
+5. Run `yarn watch` in a separate console to start watching ReScript file changes
 
 ## Prior work and inspirations
 

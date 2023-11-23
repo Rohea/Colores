@@ -1,4 +1,5 @@
 open ColorCssJs
+
 module Transparentize = {
   module Styles = {
     open CssJs
@@ -43,7 +44,7 @@ module Readable = {
       ])
     }
     let getColumn3 = (rgbVal: int) => {
-      let darkColor = hex("770000")
+      let darkColor = hex("777700")
       let lightColor = hex("ffffff")
       let bgColor = rgb(225, rgbVal - 30, rgbVal - 30)
       style([
