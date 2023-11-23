@@ -7,7 +7,7 @@ There are also bindings to `bs-css` to make usage of this library easy with colo
 ## Installation with bs-css
 
 ```
-yarn add @rohea/re-polished-bs-css
+yarn add @rohea/rescript-color-bs-css
 ```
 
 Then add `@rohea/rescript-color` and `@rohea/rescript-color-bs-css` to `bs-dependencies` in your `rescript.json`.
