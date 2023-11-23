@@ -1,5 +1,5 @@
 {
-  "name": "@rohea/rescript-color-monorepo",
+  "name": "@rohea/colores-monorepo",
   "scripts": {
     "res-build": "rescript build -with-deps",
     "res-clean": "rescript clean",
@@ -15,8 +15,8 @@
   },
   "private": true,
   "workspaces": [
-    "packages/color",
-    "packages/color-bs-css",
+    "packages/colores",
+    "packages/colores-bs-css",
     "examples"
   ],
   "devDependencies": {

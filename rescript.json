@@ -1,5 +1,5 @@
 {
-  "name": "rescript-color-monorepo",
+  "name": "colores-monorepo",
   "jsx": {
     "version": 4,
     "mode": "automatic"
@@ -12,14 +12,14 @@
     }
   ],
   "pinned-dependencies": [
-    "@rohea/rescript-color",
-    "@rohea/rescript-color-bs-css",
-    "@rohea/rescript-color-examples"
+    "@rohea/colores",
+    "@rohea/colores-bs-css",
+    "@rohea/colores-examples"
   ],
   "bs-dependencies": [
-    "@rohea/rescript-color",
-    "@rohea/rescript-color-bs-css",
-    "@rohea/rescript-color-examples"
+    "@rohea/colores",
+    "@rohea/colores-bs-css",
+    "@rohea/colores-examples"
   ],
   "bs-dev-dependencies": [
     "@glennsl/rescript-jest"

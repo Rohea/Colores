@@ -1,6 +1,6 @@
 {
-  "name": "@rohea/rescript-color",
-  "namespace": "Color",
+  "name": "@rohea/colores",
+  "namespace": "Colores",
   "jsx": {
     "version": 4,
     "mode": "automatic"

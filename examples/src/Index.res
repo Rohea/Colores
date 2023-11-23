@@ -1,11 +1,9 @@
-open ColorCssJs
-
 module Transparentize = {
   module Styles = {
     open CssJs
     let getRedBox = () => style([backgroundColor(rgba(255, 0, 0, #num(1.0)))])
     let getRedBoxTransparentize = () =>
-      style([backgroundColor(rgba(255, 0, 0, #percent(100.0))->ColorCssJs.transparentize(0.5))])
+      style([backgroundColor(rgba(255, 0, 0, #percent(100.0))->ColoresCssJs.transparentize(0.5))])
   }
 
   @react.component
@@ -30,7 +28,7 @@ module Readable = {
         width(pct(100.0 /. numCols)),
         CssJs.float(#left),
         backgroundColor(#rgb(rgbVal, rgbVal, rgbVal)),
-        color(#rgb(rgbVal, rgbVal, rgbVal)->ColorCssJs.readable()),
+        color(#rgb(rgbVal, rgbVal, rgbVal)->ColoresCssJs.readable()),
       ])
     let getColumn2 = (rgbVal: int) => {
       let darkColor = hex("181818")
@@ -40,18 +38,18 @@ module Readable = {
         width(pct(100.0 /. numCols)),
         CssJs.float(#left),
         backgroundColor(bgColor),
-        color(bgColor->ColorCssJs.readable(~onLight=darkColor, ~onDark=lightColor, ())),
+        color(bgColor->ColoresCssJs.readable(~onLight=darkColor, ~onDark=lightColor, ())),
       ])
     }
     let getColumn3 = (rgbVal: int) => {
-      let darkColor = hex("777700")
+      let darkColor = hex("770000")
       let lightColor = hex("ffffff")
       let bgColor = rgb(225, rgbVal - 30, rgbVal - 30)
       style([
         width(pct(100.0 /. numCols)),
         CssJs.float(#left),
         backgroundColor(bgColor),
-        color(bgColor->ColorCssJs.readable(~onLight=darkColor, ~onDark=lightColor, ())),
+        color(bgColor->ColoresCssJs.readable(~onLight=darkColor, ~onDark=lightColor, ())),
       ])
     }
     let getColumn4 = (rgbVal: int) => {
@@ -62,7 +60,7 @@ module Readable = {
         width(pct(100.0 /. numCols)),
         CssJs.float(#left),
         backgroundColor(bgColor),
-        color(bgColor->ColorCssJs.readable(~onLight=darkColor, ~onDark=lightColor, ())),
+        color(bgColor->ColoresCssJs.readable(~onLight=darkColor, ~onDark=lightColor, ())),
       ])
     }
   }

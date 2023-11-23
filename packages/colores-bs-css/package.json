@@ -1,7 +1,7 @@
 {
-  "name": "@rohea/rescript-color-bs-css",
+  "name": "@rohea/colores-bs-css",
   "version": "0.1.0",
-  "description": "Bindings for bs-css",
+  "description": "Colores bindings for bs-css",
   "license": "MIT",
   "keywords": [
     "rescript",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rohea/rescript-color.git"
+    "url": "https://github.com/Rohea/Colores.git"
   },
   "publishConfig": {
     "access": "public"
