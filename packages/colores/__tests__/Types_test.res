@@ -4,7 +4,7 @@ open Expect
 
 open Types
 
-describe("Polished_Types.Int8", () => {
+describe("Types.Int8", () => {
   test("make", () => expect(Int8.make(127)->Int8.asInt)->toBe(127))
 
   test("max 255", () => expect(Int8.make(256)->Int8.asInt)->toBe(255))
@@ -18,7 +18,7 @@ describe("Polished_Types.Int8", () => {
   test("fromHEX with FF", () => expect(Int8.fromHEX('F', 'F')->Int8.asInt)->toBe(255))
 })
 
-describe("Polished_Types.Degree", () => {
+describe("Types.Degree", () => {
   test("make", () => expect(Degree.make(127.0)->Degree.asFloat)->toBe(127.0))
 
   test("max 360.0", () => expect(Degree.make(361.0)->Degree.asFloat)->toBe(360.0))
@@ -26,7 +26,7 @@ describe("Polished_Types.Degree", () => {
   test("min 0.0", () => expect(Degree.make(-1.0)->Degree.asFloat)->toBe(0.0))
 })
 
-describe("Polished_Types.Percent", () => {
+describe("Types.Percent", () => {
   test("make", () => expect(Percent.make(0.5)->Percent.asFloat)->toBe(0.5))
 
   test("max 1.0", () => expect(Percent.make(1.5)->Percent.asFloat)->toBe(1.0))
@@ -34,7 +34,7 @@ describe("Polished_Types.Percent", () => {
   test("min 0.0", () => expect(Percent.make(-1.0)->Percent.asFloat)->toBe(0.0))
 })
 
-describe("Polished_Types.RGB", () => {
+describe("Types.RGB", () => {
   let rgb = RGB.make(~red=Int8.make(1), ~green=Int8.make(127), ~blue=Int8.make(255))
   let rgbFromPrimitives = RGB.fromPrimitives(1, 127, 255)
   let expectedRGBTuple = (Int8.make(1), Int8.make(127), Int8.make(255))
@@ -52,7 +52,7 @@ describe("Polished_Types.RGB", () => {
   test("blue", () => expect(rgb->RGB.blue)->toBe(Int8.make(255)))
 })
 
-describe("Polished_Types.RGBA", () => {
+describe("Types.RGBA", () => {
   let rgba = RGBA.make(
     ~red=Int8.make(0),
     ~green=Int8.make(127),
@@ -79,7 +79,7 @@ describe("Polished_Types.RGBA", () => {
   test("alpha", () => expect(rgba->RGBA.alpha)->toBe(Percent.make(0.5)))
 })
 
-describe("Polished_Types.HEX", () => {
+describe("Types.HEX", () => {
   let hex = HEX.make("0008b5")
 
   test("make", () => expect(hex->HEX.asString)->toBe("0008b5"))
@@ -91,7 +91,7 @@ describe("Polished_Types.HEX", () => {
   test("make", () => expect(HEX.make("AABBFF")->HEX.asString)->toBe("aabbff"))
 })
 
-describe("Polished_Types.HSL", () => {
+describe("Types.HSL", () => {
   let hsl = HSL.make(
     ~hue=Degree.make(180.0),
     ~saturation=Percent.make(0.7),
@@ -113,7 +113,7 @@ describe("Polished_Types.HSL", () => {
   test("lightness", () => expect(hsl->HSL.lightness)->toBe(Percent.make(0.5)))
 })
 
-describe("Polished_Types.HSLA", () => {
+describe("Types.HSLA", () => {
   let hsla = HSLA.make(
     ~hue=Degree.make(180.0),
     ~saturation=Percent.make(0.7),

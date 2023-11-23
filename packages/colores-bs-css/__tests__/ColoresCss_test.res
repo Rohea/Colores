@@ -3,9 +3,9 @@ open Expect
 
 open Colores.Types
 
-open ColoresCssJs
+open ColoresCss
 
-describe("PolishedCss_Color.Utils.cssAngleToDegree", () => {
+describe("ColoresCss.Utils.cssAngleToDegree", () => {
   test("100 grad to 90 deg", () =>
     expect(Utils.cssAngleToDegree(#grad(100.0)))->toBe(Degree.make(90.0))
   )
@@ -50,7 +50,7 @@ describe("PolishedCss_Color.Utils.cssAngleToDegree", () => {
   )
 })
 
-describe("PolishedCss_Color.Utils.cssToColor", () => {
+describe("ColoresCss.Utils.cssToColor", () => {
   test("bs-css rgb to polished rgb", () =>
     expect(Utils.cssToColor(#rgb(0, 128, 255)))->toEqual(Some(RGB(RGB.fromPrimitives(0, 128, 255))))
   )
@@ -82,7 +82,7 @@ describe("PolishedCss_Color.Utils.cssToColor", () => {
   )
 })
 
-describe("PolishedCss_Color.Utils.colorToCss", () => {
+describe("ColoresCss.Utils.colorToCss", () => {
   test("polished rgb to bs-css rgb", () =>
     expect(Utils.colorToCss(RGB(RGB.fromPrimitives(0, 128, 255))))->toEqual(#rgb(0, 128, 255))
   )
@@ -118,7 +118,7 @@ describe("PolishedCss_Color.Utils.colorToCss", () => {
  * These tests are just very simple because the functions usually use internal polished functions
  * that are tested in depth.
  ")
-describe("PolishedCss_Color.transparentize", () => {
+describe("ColoresCss.transparentize", () => {
   test("transparentize rgb", () =>
     expect(transparentize(#rgb(0, 128, 255), 0.5))->toEqual(#rgba(0, 128, 255, #percent(50.0)))
   )
@@ -130,7 +130,7 @@ describe("PolishedCss_Color.transparentize", () => {
   )
 })
 
-describe("PolishedCss_Color.readable", () => {
+describe("ColoresCss.readable", () => {
   let onLight = #rgb(10, 10, 10)
   let onDark = #rgb(245, 245, 245)
 
@@ -143,31 +143,31 @@ describe("PolishedCss_Color.readable", () => {
   )
 })
 
-describe("PolishedCss_Color.opacify", () =>
+describe("ColoresCss.opacify", () =>
   test("opacify rgba", () =>
     expect(opacify(#rgba(0, 128, 255, #num(0.2)), 0.5))->toEqual(#rgba(0, 128, 255, #percent(70.0)))
   )
 )
 
-describe("PolishedCss_Color.darken", () =>
+describe("ColoresCss.darken", () =>
   test("darken rgb(0, 128, 255) by 0.3", () =>
     expect(darken(#rgb(0, 128, 255), 0.3))->toEqual(#rgb(0, 51, 102))
   )
 )
 
-describe("PolishedCss_Color.desaturate", () =>
+describe("ColoresCss.desaturate", () =>
   test("desaturate rgb(0, 128, 255) by 0.3", () =>
     expect(desaturate(#rgb(0, 128, 255), 0.3))->toEqual(#rgb(38, 128, 217))
   )
 )
 
-describe("PolishedCss_Color.invert", () =>
+describe("ColoresCss.invert", () =>
   test("invert rgb(101, 100, 205)", () =>
     expect(invert(#rgb(101, 100, 205)))->toEqual(#rgb(154, 155, 50))
   )
 )
 
-describe("PolishedCss_Color.mix", () => {
+describe("ColoresCss.mix", () => {
   test("mix two rgb and rgba colors", () =>
     expect(mix(#rgb(0, 0, 0), #rgba(255, 255, 255, #num(0.0)), 0.7))->toEqual(
       #rgba(0, 0, 0, #percent(70.0)),
@@ -181,19 +181,19 @@ describe("PolishedCss_Color.mix", () => {
   )
 })
 
-describe("PolishedCss_Color.shade", () =>
+describe("ColoresCss.shade", () =>
   test("shade rgb(0, 128, 255) by 0.3", () =>
     expect(shade(#rgb(0, 128, 255), 0.3))->toEqual(#rgb(0, 89, 178))
   )
 )
 
-describe("PolishedCss_Color.tint", () =>
+describe("ColoresCss.tint", () =>
   test("tint rgb(0, 128, 255) by 0.3", () =>
     expect(tint(#rgb(0, 128, 255), 0.3))->toEqual(#rgb(76, 166, 255))
   )
 )
 
-describe("PolishedCss_Color.setAlpha", () => {
+describe("ColoresCss.setAlpha", () => {
   test("setAlpha of rgb", () =>
     expect(setAlpha(#rgb(0, 128, 255), 0.5))->toEqual(#rgba(0, 128, 255, #percent(50.0)))
   )
