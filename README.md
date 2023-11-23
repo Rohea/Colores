@@ -1,16 +1,16 @@
-# ReScript-Color
+# Colores
 
-A color manipulation library written in ReScript. Provides manipulation functions and internal types for different types of color values.
+A color manipulation library for ReScript, written in ReScript. Provides manipulation functions and internal types for different kinds of color values.
 
 There are also bindings to `bs-css` to make usage of this library easy with color types from it.
 
 ## Installation with bs-css
 
 ```
-yarn add @rohea/rescript-color-bs-css
+yarn add @rohea/colores-bs-css
 ```
 
-Then add `@rohea/rescript-color` and `@rohea/rescript-color-bs-css` to `bs-dependencies` in your `rescript.json`.
+Then add `@rohea/colores` and `@rohea/colores-bs-css` to `bs-dependencies` in your `rescript.json`.
 
 ## Usage with bs-css
 
@@ -23,10 +23,10 @@ let myClass = CssJs.style([
 ## Installation (without bs-css)
 
 ```
-yarn add @rohea/rescript-color
+yarn add @rohea/colores
 ```
 
-Then add `@rohea/rescript-color` to `bs-dependencies` in your `rescript.json`.
+Then add `@rohea/colores` to `bs-dependencies` in your `rescript.json`.
 
 ## Supported functions
 
