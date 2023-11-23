@@ -54,5 +54,5 @@ New functions are added as soon as we need them or someone makes a nice pull req
 
 ## Prior work and inspirations
 
-- [@rohea/re-polished]()
+- [@rohea/re-polished](https://github.com/Rohea/re-polished)
 - [Polished](https://polished.js.org/)
